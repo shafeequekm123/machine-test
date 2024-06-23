@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Template</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/global.css" />
+    <link rel="stylesheet" type="text/css" href="styles/slick.css" />
+  </head>
+  <body>
+    <div class="bcont">
+      <div class="banner">
+        <img class="img-responsive object-cover" src="images/banner.svg" />
+        <div class="banner-content">
+          <div class="outer-children">
+            <h1>
+              <div style="white-space: nowrap">
+                We create
+                <span class="font-secondary marque-text"></span>
+              </div>
+              <span class="block">experiences</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <div id="myVideo" width="970" controls>
+          <div>
+            <video id="myVideo" width="970" controls>
+              <source
+                src="images/video-banner.mp4"
+                id="sm-scroll-img"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="project-wrap">
+      <div class="container">
+        <h3>Our Projects</h3>
+
+        <div class="slider-project">
+          <div class="item">
+            <div class="outer">
+              <img
+                class="img-responsive"
+                src="images/project-img-1.jpg"
+                alt="Image 1"
+              />
+              <div class="strap">
+                <h6>Meta Oculus</h6>
+                <p>VR becomes a reality at retail.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="outer">
+              <img
+                class="img-responsive"
+                src="images/project-img-2.png"
+                alt="Image 2"
+              />
+              <div class="strap">
+                <h6>Meta Oculus</h6>
+                <p>VR becomes a reality at retail.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="outer">
+              <img
+                class="img-responsive"
+                src="images/project-img-1.jpg"
+                alt="Image 1"
+              />
+              <div class="strap">
+                <h6>Meta Oculus</h6>
+                <p>VR becomes a reality at retail.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="outer">
+              <img
+                class="img-responsive"
+                src="images/project-img-2.png"
+                alt="Image 2"
+              />
+              <div class="strap">
+                <h6>Meta Oculus</h6>
+                <p>VR becomes a reality at retail.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="outer">
+              <img
+                class="img-responsive"
+                src="images/project-img-1.jpg"
+                alt="Image 1"
+              />
+              <div class="strap">
+                <h6>Meta Oculus</h6>
+                <p>VR becomes a reality at retail.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="outer">
+              <img
+                class="img-responsive"
+                src="images/project-img-2.png"
+                alt="Image 2"
+              />
+              <div class="strap">
+                <h6>Meta Oculus</h6>
+                <p>VR becomes a reality at retail.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="outer">
+              <img
+                class="img-responsive"
+                src="images/project-img-1.jpg"
+                alt="Image 1"
+              />
+              <div class="strap">
+                <h6>Meta Oculus</h6>
+                <p>VR becomes a reality at retail.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="outer">
+              <img
+                class="img-responsive"
+                src="images/project-img-2.png"
+                alt="Image 2"
+              />
+              <div class="strap">
+                <h6>Meta Oculus</h6>
+                <p>VR becomes a reality at retail.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/gsap-latest-beta.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider-project").slick({
+          infinite: false,
+          slidesToShow: 2,
+          dots: true,
+          variableWidth: false,
+          slidesToScroll: 1,
+          cssEase: "ease-out",
+          prevArrow:
+            "<button type='button' class='slick-prev'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50' id='arrow'><path d='M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z'></path></svg></button>",
+          nextArrow:
+            "<button type='button' class='slick-next'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50' id='arrow'><path d='M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z'></path></svg></button>",
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                arrows: true,
+                dots: false,
+                slidesToShow: 2,
+                variableWidth: true,
+              },
+            },
+            {
+              breakpoint: 991,
+              settings: {
+                arrows: true,
+                dots: false,
+                slidesToShow: 2,
+                variableWidth: false,
+              },
+            },
+
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: true,
+                dots: false,
+                slidesToShow: 2,
+                variableWidth: false,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                dots: false,
+                slidesToShow: 1,
+                centerMode: false,
+                arrows: true,
+              },
+            },
+          ],
+        });
+      });
+
+      const strings = ["retail", "dynamic", "impressive"];
+      let index = 0;
+      const textElement = document.querySelector(".marque-text");
+      const initialTypeDelay = 200;
+      const typeSpeed = 100;
+      const eraseSpeed = 40;
+      const delayBetweenStrings = 2000;
+
+      function type() {
+        const currentString = strings[index];
+        let charIndex = 0;
+
+        function typeChar() {
+          if (charIndex < currentString.length) {
+            textElement.textContent += currentString.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeChar, typeSpeed);
+          } else {
+            setTimeout(erase, delayBetweenStrings);
+          }
+        }
+        setTimeout(typeChar, initialTypeDelay);
+      }
+
+      function erase() {
+        const currentString = textElement.textContent;
+        if (currentString.length > 0) {
+          textElement.textContent = currentString.slice(0, -1);
+          setTimeout(erase, eraseSpeed);
+        } else {
+          index = (index + 1) % strings.length;
+          setTimeout(type, 100);
+        }
+      }
+
+      type();
+    </script>
+    <script>
+      $(document).ready(function () {
+        // Register ScrollTrigger with GSAP
+        gsap.registerPlugin(ScrollTrigger);
+        let mm = gsap.matchMedia();
+        // GSAP animation
+        mm.add("(min-width: 1200px)", () => {
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".bcont",
+              start: "left left",
+              end: "right right",
+
+              scrub: true,
+            }, // Adjust this value based on where you want the video to end up
+          });
+
+          tl.fromTo(
+            "#myVideo",
+            {
+              y: "-79%",
+              x: "180px",
+              scale: 0.4,
+            },
+            {
+              y: "40px",
+              scale: 1,
+              x: "0", // Keeps the element centered
+            }
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
